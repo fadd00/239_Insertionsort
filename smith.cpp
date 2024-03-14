@@ -3,10 +3,9 @@ using namespace std;
 
     int i,j,n,temp;
     int arr[20];
-
-
 void input(){
-    while (true){
+    while (true)
+    {
         cout <<"masukan banyaknya elemen array : ";
         cin >> n;
         if (n <= 20)
@@ -19,11 +18,14 @@ void input(){
     cout << "====================" << endl;
     cout << "masukan elemen array" << endl;
     cout << "====================" << endl;
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         cout << "data ke-" << (i + 1 ) << ": ";
         cin >> arr[i];
-    };
+    }
+}
 void InsrtionSort(){
+
     for(i = 1; i <= n-1; i++){ //step 1
         temp = arr[i]; //step 2
 
@@ -36,7 +38,7 @@ void InsrtionSort(){
         }
          arr[j+1] = temp;//step 5
     }
-}void display (){
+} void display(){
     cout << endl;
     cout << "=================================" << endl;
     cout << "Element Array yang telah tersusun" << endl;
@@ -45,7 +47,7 @@ void InsrtionSort(){
         cout << arr[j] << endl; //output setiap element array pada garis baru
     }
     cout << "jumlah pass = " << n-1  << endl;
-    cout << endl;  
+    cout << endl; 
 }
 
 int main(){
